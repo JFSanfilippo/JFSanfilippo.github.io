@@ -1,0 +1,101 @@
+@font-face{
+    font-family: "Type_Machine";
+    src: url('Type_Machine.ttf');
+}
+
+body{
+    background-color: rgb(244, 245, 230);
+    font-family: "Type_Machine",'Courier New', Courier, monospace;
+}
+/* titre */
+.entete a{
+    float: left;
+    border: 5px solid darkgreen;
+    height: 156px;
+    width: 117px;
+}
+.entete{
+    display: flexbox;
+    min-width: 800px;
+    font-weight: bold;
+    font-size: 0.85em;    
+    text-align: center;
+    color: darkgreen;
+    border: 9px solid darkgreen;
+    border-radius: 10px;
+}
+/* ensemble Menu + option page d'acceuil */
+.commande{
+    display: flex;
+    justify-content: space-between;
+    min-width: 865px;
+}
+/* Menu differentes pages */
+.menu{
+    min-width: 475px;
+    padding: 15px;
+    list-style-type: none;
+    border: 9px solid darkgreen;
+    border-radius: 10px;
+    font-size: 0.75em;
+    color: green;
+    background-color: rgb(208, 247, 208);
+    flex: 1;
+}
+.menu a:hover{
+    color: red;
+    font-style: italic; 
+}
+.menu :visited{
+    color: darkgreen;
+}
+/* Marquage Titre dans le "menu" */
+mark{
+    background-color: rgb(64, 233, 64);
+    font-size: 1.2em;
+}
+/* options page d'acceuil */
+.option{
+    font-size: 0.7em;
+    border: 9px solid darkgreen;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+}
+.option a:link{
+    text-decoration: none;
+    color: green;
+}
+.option a:hover{
+    color: red;
+    font-style: italic;
+}
+/* bouton retour acceuil */
+.retour{
+    margin-left: 300px;
+    width: 200px;
+    border: 5px dashed darkgreen;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 3px 3px black;
+}
+.retour a:link{
+    color: red;
+    text-decoration: none;
+}
+.retour a:visited{
+    color: red;
+}
+/* bloc test audio */
+.audio{ 
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width: 850px){
+    .audio{
+        display: flex;
+        flex-direction: column;
+    }
+}
